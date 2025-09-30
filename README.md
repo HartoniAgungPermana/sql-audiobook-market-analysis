@@ -68,7 +68,7 @@ To carry out this analysis, the following tools were used:
 
 - 🛠️ **SQL**: Core language for data cleaning, transformation (ETL), querying, and analysis.  
 - 💻 **SQL Server Management Studio (SSMS)**: The IDE used for developing and managing SQL Server scripts.  
-- 📊 **Tableau**: Visualization platform for building dashboards and extracting insights.
+- 📊 **Tableau**: Visualization platform for building charts and extracting insights.
 - 🌐 **Git & GitHub**: For version control, collaboration, and project tracking.
 
 # **Data Cleaning and Transformation**  
@@ -88,7 +88,7 @@ Before cleaning, we explored the raw dataset to identify major issues.
 📊 **Raw Data Overview**  
 
 ![alt text](<images/fig.1 raw data checking.png>)
-**<center>Fig.1 Overview of The Raw Dataset.</center>**
+<p align="center"><b>Fig.1 Overview of The Raw Dataset.</center>**</b></p>
 
 🔎 **Issues identified in the raw dataset:**  
 - **Author & Narrator** → Contained extra special characters and lacked separators between first and last names.  
