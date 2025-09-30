@@ -919,10 +919,10 @@ ORDER BY ROUND(CAST(COUNT(Language) AS FLOAT)/number_of_book * 100, 3) DESC
 
 ### 🔑 **Insights**
 
-🌍 **English** dominates audiobook content, accounting for **70.8%** of all titles. The next significant language is **German** at **9.4%**, while the rest of the languages each account for **less than 4%**.  
-📊 In terms of **total engagement**, English leads by a large margin, which aligns with its overwhelming presence in the dataset.  
-🔥 However, when looking at **engagement rate per book**, **Hindi (21.2)** and **Tamil (14.83)** outperform all other languages, despite representing only **0.4%** and **0.18%** of total usage.  
-✨ This shows that while **English dominates in volume and overall engagement**, **Hindi and Tamil dominate in quality of engagement per audiobook**, making them important niche markets.  
+- 🌍 **English** dominates audiobook content, accounting for **70.8%** of all titles. The next significant language is **German** at **9.4%**, while the rest of the languages each account for **less than 4%**.  
+- 📊 In terms of **total engagement**, English leads by a large margin, which aligns with its overwhelming presence in the dataset.  
+- 🔥 However, when looking at **engagement rate per book**, **Hindi (21.2)** and **Tamil (14.83)** outperform all other languages, despite representing only **0.4%** and **0.18%** of total usage.  
+- ✨ This shows that while **English dominates in volume and overall engagement**, **Hindi and Tamil dominate in quality of engagement per audiobook**, making them important niche markets.  
 
 ## **13. How have audiobook trends evolved over time? Are there signs of growth or decline?**
 
