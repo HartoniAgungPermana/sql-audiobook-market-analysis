@@ -88,7 +88,7 @@ Before cleaning, we explored the raw dataset to identify major issues.
 📊 **Raw Data Overview**  
 
 ![alt text](<images/fig.1 raw data checking.png>)
-<p align="center"><b>Fig.1 Overview of The Raw Dataset.</center>**</b></p>
+<p align="center"><b>Fig.1 Overview of The Raw Dataset.</center></b></p>
 
 🔎 **Issues identified in the raw dataset:**  
 - **Author & Narrator** → Contained extra special characters and lacked separators between first and last names.  
@@ -369,7 +369,7 @@ In real-world data analytics pipelines, this approach mirrors best practices whe
 The **top 24 rows** of the cleaned dataset are shown below:  
 
 ![alt text](<images/fig.2 ovrv cleaned data.png>)  
-**<center>Fig.2 Overview of Cleaned Data</center>**  
+<p align="center"><b>Fig.2 Overview of Cleaned Data</center></b></p>  
 
 # **Data Validation**
 
@@ -412,7 +412,7 @@ ORDER BY [Total Review] DESC
 ### 📊 **Visualization:** 
 
 ![alt text](<images/fig.3 ratings vs engagement.png>)
-**<center>Fig.3 Audio Books Distribution by Ratings and Engagement</center>**
+<p align="center"><b>Fig.3 Audio Books Distribution by Ratings and Engagement</b></p>
 
 ### **🔑 Insights**
 - 📈 **Positive Correlation**: In general, the more engagement an audiobook receives, the higher its ratings tend to be.  
@@ -459,10 +459,10 @@ ORDER BY  Ratings DESC
 ### 📊 **Visualization**
 
 ![alt text](<images/fig.4 ratings distribution low engagement books.png>)
-**<center>Fig.4 Ratings Distribution of Low Engagement Audio Books</center>**
+<p align="center"><b>Fig.4 Ratings Distribution of Low Engagement Audio Books</b></p>
 
 ![alt text](<images/fig.5 ratings distribution high engagement books.png>)
-**<center>Fig.5 Ratings Distribution of High Engagement Audio Books</center>**
+<p align="center"><b>Fig.5 Ratings Distribution of High Engagement Audio Books</b></p>
 
 ### **🔑Insights**
 
@@ -661,7 +661,7 @@ ORDER BY number_of_audible_book DESC
 ### 📊 **Visualization:**
 
 ![alt text](<images/fig.6 author engagement vs productivity.png>)
-**<center>Fig.6 Author Total Engagement Vs. Author Productivity</center>**
+<p align="center"><b>Fig.6 Author Total Engagement Vs. Author Productivity</b></p>
 
 ### **🔑Insights**
 
@@ -694,7 +694,7 @@ ORDER BY number_of_audible_book DESC
 
 ### 📊 **Visualization:**
 ![alt text](<images/fig.7 author ratings vs productivity.png>)
-**<center>Fig.7 Author Ratings Vs. Author Productivity</center>**
+<p align="center"><b>Fig.7 Author Ratings Vs. Author Productivity</b></p>
 
 ### **🔑Insights**
 
@@ -954,7 +954,7 @@ ORDER BY YEAR([Release Date]),DATEPART(MONTH,[Release Date])
 ### 📊 **Visualization**
 
 ![alt text](<images/fig.8 total book and engagement overtime.png>)
-**<center>Fig. 8 Released Audio Books and Total Engagement Overtime</center>**
+<p align="center"><b>Fig. 8 Released Audio Books and Total Engagement Overtime</b></p>
 
 ### 🔑 **Insights:**
 
@@ -993,8 +993,7 @@ ORDER BY YEAR([Release Date]),DATEPART(MONTH,[Release Date])
 ### 📊 **Visualization**
 
 ![alt text](<images/fig.9 quality trends overtime.png>)
-**<center>Fig.9 Quality Trends Overtime</center>**
-
+<p align="center"><b>Fig.9 Quality Trends Overtime</b></p>
 
 ### 🔑 **Insights:**
 
