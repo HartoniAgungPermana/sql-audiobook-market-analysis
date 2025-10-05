@@ -1,30 +1,91 @@
 # 📊 **End-to-End Audiobook Market Analysis with SQL and Tableau**
 
-This project was developed to explore and understand the business insights of the audiobook market,transforming raw data into **powerful insights** that tell the real story behind the audiobook market. This work delivers **end-to-end data analytics process** from **data cleaning process** to **analytics and storytelling** with a focus on:  
+This project presents an end-to-end analysis of the audiobook market, transforming a raw, unstructured dataset of over 87,000 titles into a strategic business intelligence report. The central objective was to uncover the key drivers of success in a highly concentrated market and provide data-driven recommendations for authors and publishers.
 
-- 📊 The relationship between **audiobook popularity** and **quality**: Identifying how the popularity relates with its quality, tracking the patterns to conclude is the relationship works for all audiobooks or just for specific audiobooks.
-- 👩‍💻 **Author productivity** and how it influences the quality of their works: Addressing the influence of the Author productivity with the quality of the author itselves, are the author with many released audiobooks maintain a huge engagement and ratings? or the number of released audiobooks doesn't do anything on engagement and ratings?.
-- 💰 **Market and pricing analysis**: Evaluating pricing influence with market behavior, does the free and cheap audiobooks maintain high engagement? Is the market values the premium quality and exlusivity? 
-- 🌍 **Language and regional insights**: Evaluating the language preference of the market, addressing the most startegic region market by analysing the language dominance of audiobooks.
-- 📈 **Trends over time**: Tracking the market trends of the audiobooks overtime, including quality trends, engagement trends, and suply trends.
+The project showcases a complete data analytics workflow, including:
+
+- **Data Cleaning and Transformation (ETL)** using advanced **SQL** to handle complex inconsistencies in text, dates, and numerical data.
+
+- **In-depth Data Analysis** to answer 14 critical business questions regarding market dynamics, author productivity, pricing strategy, and consumer behavior.
+
+- **Insight Generation and Visualization** using **Tableau** to build compelling charts and visuals that translate complex data into clear, actionable stories.
+
+The final output is not just an analysis but a strategic guide, delivering actionable recommendations designed to help stakeholders navigate the audiobook landscape, optimize their release strategies, and maximize audience engagement.
 
 ---
 
 # 📑 **Table of Contents**
  
-1. [**Problem Statement**](#problem-statement)  
-2. [**Dataset**](#dataset)  
-3. [**Methodology**](#methodology)  
-4. [**Tools**](#tools)
-5. [**Data Cleaning and Transformation**](#data-cleaning-and-transformation)  
-6. [**Data Validation**](#data-validation)
-7. [**Analysis, Visualization, and Interpretation**](#analysis-visualization-and-interpretation-of-findings)
-8. [**What I Learned**](#what-i-learned)
-9. [**Challenges I Faced**](#challenges-i-faced)
-10. [**Executive Summary**](#executive-summary)
-11. [**Recomendations**](#recomendations)
+1. [**Executive Summary**](#executive-summary)
+2. [**Recommendations**](#recommendations)
+3. [**Dataset**](#dataset) 
+4. [**Problem Statement**](#problem-statement)  
+5. [**Project Workflow**](#project-workflow)  
+6. [**Tools**](#tools)
+7. [**Data Preparation**](#data-preparation)
+8. [**Data Cleaning and Transformation**](#data-cleaning-and-transformation)  
+9. [**Data Validation**](#data-validation)
+10. [**Analysis, Visualization, and Interpretation**](#analysis-visualization-and-interpretation-of-findings)
+11. [**What I Learned**](#what-i-learned)
+12. [**Challenges I Faced**](#challenges-i-faced)
+
 
 📌 *You can skip the technical part if you only want to focus on the analysis and insights interpretation*
+
+# **Executive Summary**
+
+The audiobook market is not a level playing field, it's a **"winner-takes-most" arena** where an exceptionally small number of titles capture the vast majority of listener attention. Our analysis of over 87,000 audiobooks reveals that success is not driven by volume or prolific output, but by a strategic focus on **impact, production quality, and perceived value**. While the market appears saturated, significant opportunities exist for those who understand these core dynamics.
+
+The central finding is a stark market concentration that far exceeds the traditional 80/20 rule: a mere **1.26% of audiobooks generate 80% of all user engagement**. This elite group of titles dominates the landscape, leaving tens of thousands of others struggling for visibility
+
+This dynamic is shaped by several key factors:
+
+1. **Impact Over Volume**: Author success is not correlated with the number of books published. In fact, many of the most engaging authors, like James Clear (*Atomic Habits*), have only a few titles. This proves that a single, high-impact "tentpole" release is far more valuable than a large catalog of mediocre ones.
+
+2. **Production Quality is Paramount**: High ratings are not guaranteed by great content alone. Our analysis uncovered instances where celebrated books received poor audiobook ratings, suggesting that the listener's experience are shaped by **narration, audio engineering, and adaptation**—is just as crucial as the source material itself.
+
+3. **Pricing Signals Value**: Price is a powerful lever for shaping consumer perception. While **free audiobooks serve as an effective tool for acquisition**, among paid titles, a higher price point strongly correlates with both higher ratings and greater engagement per book. The market does not reward a race to the bottom; instead, it demonstrates a willingness to pay a premium for titles perceived to be of higher quality and exclusivity.
+
+4. **Untapped Niche Opportunities**: While the English-language market is fiercely competitive, there are passionate, underserved audiences in other languages. Markets like Hindi and Tamil show exceptionally high engagement rates per book, representing a clear opportunity for strategic expansion and capturing a loyal listener base.
+
+
+# **Recommendations**
+
+Based on the data-driven insights from this analysis, the following strategic recommendations are proposed for authors, publishers, and other stakeholders looking to succeed in the audiobook market:
+
+### 1.  **Focus on "Tentpole" Releases with High-Impact Marketing**
+
+- **The Finding**: The market operates on a "winner-takes-most" dynamic, where less than 2% of audiobooks generate the majority of audience engagement. A "long-tail" strategy of releasing many average-quality books is unlikely to yield significant engagement.
+
+- **Recommendation**: Instead of spreading resources thinly across a large catalog, concentrate investment on developing and marketing a smaller number of high-potential "tentpole" titles. A significant pre-launch and post-launch marketing budget is critical to break through the noise and land a book within the top-performing percentile, where the vast majority of engagement occurs.
+
+### 2. **Prioritize Quality and Production Value Over Volume**
+
+- **The Finding**: The analysis shows that author productivity (number of books) does not guarantee engagement or high ratings. Furthermore, even highly acclaimed content can receive poor ratings if the audio adaptation is lacking (e.g., poor narration or production).
+
+- **Recommendation**: Invest heavily in production quality. This includes selecting professional narrators whose style matches the content, ensuring high-fidelity audio engineering, and creating a seamless listening experience. A single, flawlessly produced audiobook is more valuable for building an author's reputation and driving engagement than multiple, mediocre releases.
+
+### 3. **Implement a Strategic Pricing Model**
+
+- **The Finding**: Free audiobooks are effective at generating high engagement per title, likely due to their accessibility. However, among paid titles, there is a clear positive correlation between price, average ratings, and engagement per book. Customers perceive higher-priced audiobooks as being of higher quality.
+
+- **Recommendation:**
+	- **Use "Free" as a Tool**: Offer a book for free strategically—either as a limited-time promotion to build buzz or as a lead magnet to introduce new listeners to an author's work.
+
+	- **Don't Underprice Premium Content**: For high-quality, well-produced audiobooks, do not compete on price. A premium price point can reinforce the perception of value and attract a more committed audience. The data suggests the market is willing to pay for quality and exclusivity
+
+### 4. **Explore Underserved, High-Engagement Language Markets**
+
+- **The Finding**: While English dominates the market in sheer volume, languages like Hindi and Tamil show exceptionally high engagement rates per book. This points to passionate, underserved audiences.
+
+- **Recommendation**: For publishers with a strong English-language catalog, consider investing in high-quality translations and adaptations for these niche markets. The cost of entry may be lower, and the potential for capturing a highly engaged user base is significant. This represents a clear market opportunity for strategic expansion beyond the saturated English-speaking world.
+
+# **Dataset**
+
+The dataset was sourced from **Kaggle**, containing detailed information on audiobook names, authors, narrators, reviews, ratings, release dates, durations, languages, and prices.  
+
+📂 You can access the dataset [`here: audible_uncleaned.csv`](dataset/audible_uncleaned.csv).
+It contains **87,489 rows** and **8 columns**.
 
 # **Problem Statement**  
 
@@ -45,22 +106,16 @@ The following questions guided the analysis:
 13. How have audiobook trends evolved over time? Are there signs of growth or decline?  
 14. How have audiobook **quality trends** changed over time?  
 
-# **Dataset**
-
-The dataset was sourced from **Kaggle**, containing detailed information on audiobook names, authors, narrators, reviews, ratings, release dates, durations, languages, and prices.  
-
-📂 You can access the dataset [`here: audible_uncleaned.csv`](dataset/audible_uncleaned.csv).
-It contains **87,489 rows** and **8 columns**.
-
-# **Methodology**  
+# **Project Workflow**  
 
 The project followed a structured analytical workflow:  
 
-1. 🧹 **Data Cleaning and Transformation**  
-2. ✅ **Data Validation**  
-3. 📊 **Data Analysis**  
-4. 📈 **Data Visualization**  
-5. 🔎 **Interpretation of Findings**  
+1. 🔄 **Data Preparation**
+2. 🧹 **Data Cleaning and Transformation**  
+3. ✅ **Data Validation**  
+4. 📊 **Data Analysis**  
+5. 📈 **Data Visualization**  
+6. 🔎 **Interpretation of Findings**  
 
 # **Tools**  
 
@@ -71,17 +126,13 @@ To carry out this analysis, the following tools were used:
 - 📊 **Tableau**: Visualization platform for building charts and extracting insights.
 - 🌐 **Git & GitHub**: For version control, collaboration, and project tracking.
 
-# **Data Cleaning and Transformation**  
-
-This section explains the steps taken to transform raw, inconsistent data into clean, business-ready data.  
-
-## **1. Extract Data from Source**  
+# **Data Preparation**
 
 The raw dataset was stored in **CSV format** and imported into SQL Server using `BULK INSERT`.  
 
 👉 You can access my data extraction code [`here: 1. Extract Data.sql`](code/1_Extract_Data.sql)
 
-## **2. Check the Quality of the Data**  
+# **Data Cleaning and Transformation**  
 
 Before cleaning, we explored the raw dataset to identify major issues.  
 
@@ -100,13 +151,11 @@ Before cleaning, we explored the raw dataset to identify major issues.
 
 ⚠️ These inconsistencies needed to be fixed before any reliable analysis could be performed.
 
-## **3. Clean the Data** 
-
 👉 For in-dept techinal cleaning method, you can access my sql code [`here: 2. Clean and Transform.sql`](code/2_Clean_and_Transform.sql)
 
-***For attached SQL code, i have added features to hide and collapsed the code if you want to dig deeper in technical method***
+> ***For attached SQL code, i have added features to hide and collapsed the code if you want to dig deeper in technical method***
 
-### **3.1 Name Column**  
+### **3.1 Cleaning Name Column**  
 
 We will check is there any duplicates value, null value, unwanted spaces, or any other anomaly in `name` column. `COUNT WINDOW FUNCTION` was used to address the duplivates value while `TRIM` was used to determine the unwwanted spaces. 
 
@@ -130,7 +179,7 @@ WHERE LEN(name) <> LEN(TRIM(name));
 </details>
 We dont spot any anomaly. So we will keep the name column.
 
-### **3.2 Author Column**  
+### **3.2 Cleaning Author Column**  
 
 From **Fig.1**, we observed that every record in the **author** column contained the prefix `"Writtenby:"`.  
 Additionally, author names were concatenated without spaces (e.g., `"RickRiordan"` instead of `"Rick Riordan"`).  
@@ -165,7 +214,7 @@ FROM (
 ```
 </details>
 
-### **3.3 Narrator Column**  
+### **3.3 Cleaning Narrator Column**  
 
 Similar to the author column, the **narrator** column contained the prefix `"Narratedby:"`, and names were improperly joined without spaces (e.g., `"EmmaTalon"` instead of `"Emma Talon"`).  
 
@@ -199,7 +248,7 @@ FROM (
 ```
 </details>
 
-### **3.4 The time Column**
+### **3.4 Cleaning time Column**
 
 The **time** column displayed highly inconsistent formats, mixing plural/singular units, missing components, and anomalies.  
 Below are the observed patterns:  
@@ -255,7 +304,7 @@ FROM (
 ```
 </details>
 
-### **3.5 Release Date Column**  
+### **3.5 Cleaning Release Date Column**  
 
 The **release date** column was originally stored as an `NVARCHAR` type, which is not suitable for time-based analysis.  
 Additionally, the values were formatted in **dd-mm-yyyy** style, requiring explicit format specification during conversion.  
@@ -269,13 +318,12 @@ Additionally, the values were formatted in **dd-mm-yyyy** style, requiring expli
 
 ```sql
 SELECT
-    CONVERT(date, release_date, 3) AS cleaned_release_date,
-    release_date                    AS dirty_release_date
+    CONVERT(date, release_date, 3) AS cleaned_release_date
 FROM raw_audible_book;
 ```
 </details>
 
-### **3.6 Language Column**  
+### **3.6 Cleaning Language Column**  
 
 The **language** column contained inconsistent formatting:  
 - Some entries were not properly capitalized.  
@@ -302,7 +350,7 @@ FROM raw_audible_book;
 ```
 </details>
 
-### **3.7 Stars Column**  
+### **3.7 Cleaning Stars Column**  
 
 The **stars** column contained **two metrics combined into one**:  
 - **Ratings** (e.g., `"4.3 out of 5 stars"`)  
@@ -332,7 +380,7 @@ FROM (
 ```
 </details>
 
-### **3.8 Price Column**  
+### **3.8 Cleaning Price Column**  
 
 The **price** column had multiple issues:  
 - Stored with **thousand separators**, which SQL misinterprets as decimals (causing double decimals).  
@@ -388,6 +436,9 @@ Each question from the **Problem** section is analyzed using **SQL** queries, wi
 
 ## **1. Is there a significant discrepancy between audiobook ratings and total engagement? Do the most popular books also have the highest ratings?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 To identify potential discrepancies between **ratings** and **total engagement**, I retrieved the following attributes:  
 
 - 🎧 `Book Name`  
@@ -396,8 +447,6 @@ To identify potential discrepancies between **ratings** and **total engagement**
 
 The results were then ordered by engagement (highest → lowest) and visualized as a **scatter plot** to highlight the relationship between the two metrics. 
 
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 SELECT
@@ -408,8 +457,6 @@ FROM cleaned_audible_book
 ORDER BY [Total Review] DESC
 ```
 </details>
-
-### 📊 **Visualization:** 
 
 ![alt text](<images/fig.3 ratings vs engagement.png>)
 <p align="center"><b>Fig.3 Audio Books Distribution by Ratings and Engagement</b></p>
@@ -423,6 +470,9 @@ ORDER BY [Total Review] DESC
 
 ## **2. How are ratings distributed across low- and high-engagement audiobooks?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 Since this analysis focuses on the **average ratings** of audiobooks, titles with no ratings were excluded.  
 To examine the distribution, we aggregated audiobook counts (`COUNT`) grouped by their rating levels.  
 
@@ -431,9 +481,6 @@ To examine the distribution, we aggregated audiobook counts (`COUNT`) grouped by
 - **High Engagement**: at least **150 total reviews**  
 
 This classification allows us to compare how ratings are distributed between niche titles and widely popular books.
-
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 -- Lets check for the book with low engagement
@@ -456,7 +503,6 @@ ORDER BY  Ratings DESC
 ```
 </details>
 
-### 📊 **Visualization**
 
 ![alt text](<images/fig.4 ratings distribution low engagement books.png>)
 <p align="center"><b>Fig.4 Ratings Distribution of Low Engagement Audio Books</b></p>
@@ -476,14 +522,14 @@ ORDER BY  Ratings DESC
 
 ## **3. What are the differences between popular and niche books in terms of key metrics?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 Since this analysis focuses on the **average ratings and engagement of audiobooks**, any titles with no ratings are excluded.  
 - **Popular books** are defined as those with more than **500 total reviews**.  
 - **Niche books** are defined as those with **500 or fewer reviews**.  
 
 We then compared key performance metrics between the two groups using aggregate functions, combining both queries with a `UNION ALL`. 
-
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 SELECT
@@ -508,8 +554,6 @@ WHERE Ratings <> 0 AND [Total Review] <= 500;
 ```
 </details>
 
-### **Output:**
-
 | Category       | Number of Books | Total Engagement | Engagement per Book | Avg Ratings | Avg Price |
 |----------------|-----------------|------------------|----------------------|-------------|-----------|
 | Popular Books  | 93              | 147,996          | 1,591.35             | 4.59        | 8.87      |
@@ -530,6 +574,9 @@ WHERE Ratings <> 0 AND [Total Review] <= 500;
 
 ## **4. Does audiobook engagement follow the Pareto Principle (80/20 Rule)?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 The **Pareto Principle** states that roughly **80% of effects come from 20% of causes**.  
 In this context, we want to test whether **80% of total engagement (reviews)** is generated by only **20% of audiobooks**.  
 
@@ -537,9 +584,6 @@ To validate this, we:
 - Retrieved each audiobook’s **`Book Name`** and **`Total Review`**.  
 - Applied **window functions** to calculate cumulative engagement percentages.  
 - Used a **CTE** to structure the query for readability and performance.
-
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 WITH cumulative_analysis AS (
@@ -561,9 +605,7 @@ WHERE total_engagement_cumulative_percentage <= 80
 ```
 </details>
 
-### **Output**
-
-| row_number | Book Name               | Total Review | Cumulative Engagement % |
+| Row Number | Book Name               | Total Review | Cumulative Engagement % |
 |------------|-------------------------|--------------|--------------------------|
 | …          | …                       | …            | …                        |
 | 1102       | Gardens of the Moon     | 37           | 79.95                   |
@@ -581,6 +623,9 @@ WHERE total_engagement_cumulative_percentage <= 80
 - 🏆 It indicates a **winner-takes-most market**: a tiny elite of highly popular audio books dominate audience attention, while the vast majority of books struggle to attract reviews.
 
 ## **5. How does the **top 1% market share** compare with the remaining 99%?**
+
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
 
 Since the dataset contains a total of **87,489 audiobooks**, we compare the **top 1% of audiobooks** (approximately 875 books) ranked by total engagement with the **remaining 99% of the market**.  
 
@@ -623,10 +668,9 @@ FROM market_share
 WHERE row_index > 875
 ```
 </details>
+</details>
 
-### **Output**
-
-| market_category   | number_of_book | total_engagement | engagement_per_book | avg_price |
+| Market Category   | Number of Books | Total Engagement | Engagement per Book | AVG Price |
 |-------------------|----------------|------------------|----------------------|-----------|
 | Top 1% Market     | 875            | 250860           | 286.7                | 7.97      |
 | The Rest of Market| 86614          | 74894            | 0.86                 | 6.39      |
@@ -640,11 +684,11 @@ WHERE row_index > 875
 
 ## **6. What is the relationship between an author’s total released audiobooks and their total engagement?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 To analyze the relationship between the total engagement and the number of audiobooks per author, we retrieved the `Author` field, aggregated engagement using `SUM([Total Review])`, and counted the number of audiobooks using `COUNT(Author)`.  
 Since the focus is on single authors, books written by multiple authors or production/studio entities were excluded using the `WHERE` clause. The results were then visualized with a scatter plot.  
-
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 SELECT
@@ -658,8 +702,6 @@ ORDER BY number_of_audible_book DESC
 ```
 </details>
 
-### 📊 **Visualization:**
-
 ![alt text](<images/fig.6 author engagement vs productivity.png>)
 <p align="center"><b>Fig.6 Author Total Engagement Vs. Author Productivity</b></p>
 
@@ -672,13 +714,13 @@ ORDER BY number_of_audible_book DESC
 
 ## **7. How does an author’s productivity (number of books) correlate with their average ratings?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 Since the focus is on **authors’ average ratings**, we excluded audiobooks with **no ratings** (as many of these are re-released versions with different narrators).  
 We also filtered out books written by **multiple authors** or by **production/studio entities** to focus only on **individual author performance**.  
 
 To analyze the relationship, we retrieved the `Author` field, calculated the **average rating** using `AVG(Ratings)`, and counted the **number of audiobooks** using `COUNT(Author)`. The results were visualized with a **scatter plot**.
-
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 SELECT
@@ -692,7 +734,6 @@ ORDER BY number_of_audible_book DESC
 ```
 </details>
 
-### 📊 **Visualization:**
 ![alt text](<images/fig.7 author ratings vs productivity.png>)
 <p align="center"><b>Fig.7 Author Ratings Vs. Author Productivity</b></p>
 
@@ -720,14 +761,14 @@ The SQL code and visualization used to analyze this were the same as those shown
 
 ## **9. Are authors with massive engagement also highly rated?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 To validate whether authors associated with massive engagement also receive high ratings, we filter for popular authors with poor ratings.  
 - 📊 We define **massive engagement** as authors with more than **500 total engagements** (`SUM([Total Review])`).  
 - ⭐ We define a **good rating** as an average rating **above 4.0 stars**.  
 
 Thus, our query highlights authors who are popular (high engagement) but have relatively **low ratings (< 4.0)**.
-
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 SELECT
@@ -741,8 +782,6 @@ HAVING SUM([Total Review]) > 500 AND AVG(Ratings) < 4.0
 ORDER BY total_engagement DESC
 ```
 </details>
-
-### **Output**
 
 | Author          | total_engagement | avg_ratings |
 |-----------------|------------------|-------------|
@@ -762,6 +801,9 @@ ORDER BY total_engagement DESC
 
 ## **10. Does the Price of Audiobooks Affect Total Engagement?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 To analyze the relationship between audiobook prices and customer engagement, we segmented audiobooks into four price categories:
 
 - 🆓 **Free** (Price = 0)  
@@ -770,9 +812,6 @@ To analyze the relationship between audiobook prices and customer engagement, we
 - 💎 **High Price** (> 15 USD)  
 
 We used a `CASE` statement to assign each audiobook into a price segment, then aggregated the results to summarize engagement levels across categories.  
-
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 WITH price_analysis AS (
@@ -794,8 +833,6 @@ FROM price_analysis
 GROUP BY price_segmentation;
 ```
 </details>
-
-### **Output**
 
 | Price Segmentation | Number of Audiobooks | Total Engagement | Engagement per Book |
 |--------------------|-----------------------|------------------|----------------------|
@@ -824,13 +861,12 @@ GROUP BY price_segmentation;
 - ✅ **Conclusion:**  
   Price significantly affects engagement. **Free audiobooks** attract high engagement per title because they are easy to access. Once payment is required, however, customers appear more engaged with **higher-priced** audiobooks, suggesting that premium pricing can drive stronger interest due to perceived quality and exclusivity.
 
-
 ## **11. Does the Price of Audiobooks Affect Average Ratings?**
 
-This analysis uses a similar approach to **Problem #10**, but instead of measuring total engagement, we calculate the average ratings of audiobooks. To ensure accuracy, we exclude all audiobooks that do not have any ratings.
-
 <details>
-<summary><code>Click to see the SQL analysis code</code></summary>
+<summary><code>Expand Analysis Approach</code></summary>
+
+This analysis uses a similar approach to **Problem #10**, but instead of measuring total engagement, we calculate the average ratings of audiobooks. To ensure accuracy, we exclude all audiobooks that do not have any ratings.
 
 ```sql
 WITH price_analysis AS (
@@ -853,9 +889,7 @@ GROUP BY price_segmentation
 ```
 </details>
 
-### **Output**
-
-| price_segmentation | number_of_audible_book | avg_ratings |
+| Price Segmentation | Number of Audiobook | AVG Ratings |
 |--------------------|------------------------|-------------|
 | Low Price          | 2718                   | 4,4         |
 | Free               | 207                    | 4,24        |
@@ -875,6 +909,9 @@ GROUP BY price_segmentation
 - ✅ **Conclusion:** Overall, the results reinforce the idea that the market perceives **premium-priced audiobooks as higher quality**, aligning with consumer expectations of *“you get what you pay for.”*
 
 ## **12. Which Language Dominates the Audiobook Market?**
+
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
 
 In this section, we perform a part-to-whole analysis to understand language dominance in the audiobook market.  
 We evaluate three key metrics for each language:
@@ -908,8 +945,7 @@ GROUP BY Language, number_of_book
 ORDER BY ROUND(CAST(COUNT(Language) AS FLOAT)/number_of_book * 100, 3) DESC
 ```
 </details>
-
-### 📊 **Visualization**
+</details>
 
 ![alt text](<images/top 10 most used language.png>)
 
@@ -926,6 +962,9 @@ ORDER BY ROUND(CAST(COUNT(Language) AS FLOAT)/number_of_book * 100, 3) DESC
 
 ## **13. How have audiobook trends evolved over time? Are there signs of growth or decline?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 To analyze audiobook trends over time, we aggregate two key metrics:  
 📚 **Number of audiobooks released** using `COUNT([Book Name])`  
 ⭐ **Total engagement** using `SUM([Total Review])`  
@@ -935,9 +974,6 @@ Because we want to observe **monthly trends**, we extract the year and month inf
 ⚠️ Since month names are stored as `NVARCHAR`, ordering them alphabetically would not reflect the chronological order. To solve this, we use `DATEPART` to extract the **month number**, which is applied only in the `ORDER BY` clause (not in the `SELECT` clause).  
 
 📈 Line chart will be used to visualize the trends.
-
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 SELECT
@@ -950,8 +986,6 @@ GROUP BY YEAR([Release Date]), LEFT(DATENAME(MONTH,[Release Date]), 3), DATEPART
 ORDER BY YEAR([Release Date]),DATEPART(MONTH,[Release Date])
 ```
 </details>
-
-### 📊 **Visualization**
 
 ![alt text](<images/fig.8 total book and engagement overtime.png>)
 <p align="center"><b>Fig. 8 Released Audio Books and Total Engagement Overtime</b></p>
@@ -970,13 +1004,13 @@ ORDER BY YEAR([Release Date]),DATEPART(MONTH,[Release Date])
 
 ## **14. How have audiobook quality trends evolved over time?**
 
+<details>
+<summary><code>Expand Analysis Approach</code></summary>
+
 To determine audiobook **quality**, we aggregate the average ⭐ `Ratings` using `AVG`.  
 Since we only want meaningful data, we **filtered out all audiobooks with no reviews**.  
 
 📅 Similar to **Problem #13**, we use `YEAR` and `DATENAME` to extract the **year** and **month** from `Release Date`, while `DATEPART` ensures the data is ordered **chronologically**. 
-
-<details>
-<summary><code>Click to see the SQL analysis code</code></summary>
 
 ```sql
 SELECT
@@ -989,8 +1023,6 @@ GROUP BY YEAR([Release Date]), LEFT(DATENAME(MONTH,[Release Date]), 3), DATEPART
 ORDER BY YEAR([Release Date]),DATEPART(MONTH,[Release Date])  
 ```
 </details>
-
-### 📊 **Visualization**
 
 ![alt text](<images/fig.9 quality trends overtime.png>)
 <p align="center"><b>Fig.9 Quality Trends Overtime</b></p>
@@ -1014,7 +1046,7 @@ ORDER BY YEAR([Release Date]),DATEPART(MONTH,[Release Date])
 Throughout this project, I sharpened my understanding of the **audiobook market** and enhanced my skills in **SQL** and **Tableau**—especially in **data manipulation, data analysis, and data visualization**.  
 Here are some of the most important and specific takeaways:
 
-- 🧹 **The importance of data cleaning**  
+- 🧹 **Effective Data Cleaning**  
   Data cleaning is essential for transforming raw datasets into **business-ready data**. Without it, datasets remain noisy and full of anomalies, which prevents effective **aggregation, filtering, grouping, and ordering**. By carefully cleaning the data, I ensured the analysis could generate **reliable and meaningful insights**.
 
 - ⚙️ **Advanced SQL usage**  
@@ -1045,73 +1077,6 @@ This project was not without difficulties, but each challenge provided valuable 
 
 - ⚖️ **Balancing breadth and depth**  
   I had to constantly balance between going **deep into detailed analysis** and maintaining a **broad overview** of the data landscape. Striking this balance ensured that insights were comprehensive yet focused.
-
----
-
-# **Executive Summary**
-
-The audiobook market is characterized by **extreme concentration, consistent quality, and strong ties between pricing, popularity, and perception**. Success in this space is less about volume and more about **impact, reputation, and production quality**. For businesses and creators, this means focusing on **high-quality releases, effective storytelling, and audience trust** is far more valuable than maximizing quantity.   
-
-### 📌 Key Takeaways:
-
-- ⭐ **Popularity vs. Quality**  
-  Engagement and ratings generally move together: highly popular books are not only widely read but also **trusted for quality**. However, low-engagement titles show greater variability, making their ratings less reliable.  
-
-- ⚖️ **Market Concentration**  
-  The market follows a **winner-takes-most dynamic**. A tiny fraction of books (even less than 2%) drives the majority of engagement, confirming the **Pareto Principle** in an even more extreme form.  
-
-- 🏆 **Top Performers**  
-  The **top 1% of audiobooks** dominate both engagement and revenue potential, even commanding a slight **price premium**. This elite group captures audience attention at scale, while most titles remain niche.  
-
-- 👨‍💼 **Author Impact**  
-  Productivity (number of books) is not a guarantee of success. Engagement is driven more by **quality and author reputation** than sheer volume. A few authors achieve massive influence with only a handful of books, showing the importance of **impact over output**.  
-
-- 📖 **Ratings and Perception**  
-  While most highly engaged authors maintain strong ratings, some cases highlight a gap between **content quality** and **audiobook execution** (e.g., narration, adaptation). This underscores the role of **production quality** in shaping listener experience.  
-
-- 💰 **Pricing Effects**  
-  Free books achieve strong per-title engagement due to accessibility, while **higher-priced audiobooks** consistently earn better ratings and engagement per book. This indicates that the market values **premium quality and exclusivity**.  
-
-- 🌍 **Language Dynamics**  
-  English dominates the market by sheer volume and total engagement. However, smaller markets like **Hindi and Tamil** show exceptional **engagement per book**, pointing to underserved but highly engaged niches.  
-
-- 📈 **Trends Over Time**  
-  - The **early market (1998–2012)** was flat, reflecting low adoption.  
-  - A **demand boom (2013–2018)** marked peak engagement and breakout titles.  
-  - From **2019–2020**, supply caught up, but engagement per book declined.  
-  - **Recent drops (2021+)** likely reflect **data recency effects**, not a true market crash.  
-  - Despite surging volume, **quality remained remarkably stable** (~4.4–4.7/5), proving that growth did not dilute customer satisfaction.  
-
-# **Recomendations**
-
-Based on the data-driven insights from this analysis, the following strategic recommendations are proposed for authors, publishers, and other stakeholders looking to succeed in the audiobook market:
-
-### 1.  **Focus on "Tentpole" Releases with High-Impact Marketing**
-
-- **The Finding**: The market operates on a "winner-takes-most" dynamic, where less than 2% of audiobooks generate the majority of audience engagement. A "long-tail" strategy of releasing many average-quality books is unlikely to yield significant engagement.
-
-- **Recommendation**: Instead of spreading resources thinly across a large catalog, concentrate investment on developing and marketing a smaller number of high-potential "tentpole" titles. A significant pre-launch and post-launch marketing budget is critical to break through the noise and land a book within the top-performing percentile, where the vast majority of engagement occurs.
-
-### 2. **Prioritize Quality and Production Value Over Volume**
-
-- **The Finding**: The analysis shows that author productivity (number of books) does not guarantee engagement or high ratings. Furthermore, even highly acclaimed content can receive poor ratings if the audio adaptation is lacking (e.g., poor narration or production).
-
-- **Recommendation**: Invest heavily in production quality. This includes selecting professional narrators whose style matches the content, ensuring high-fidelity audio engineering, and creating a seamless listening experience. A single, flawlessly produced audiobook is more valuable for building an author's reputation and driving engagement than multiple, mediocre releases.
-
-### 3. **Implement a Strategic Pricing Model**
-
-- **The Finding**: Free audiobooks are effective at generating high engagement per title, likely due to their accessibility. However, among paid titles, there is a clear positive correlation between price, average ratings, and engagement per book. Customers perceive higher-priced audiobooks as being of higher quality.
-
-- **Recommendation:**
-	- **Use "Free" as a Tool**: Offer a book for free strategically—either as a limited-time promotion to build buzz or as a lead magnet to introduce new listeners to an author's work.
-
-	- **Don't Underprice Premium Content**: For high-quality, well-produced audiobooks, do not compete on price. A premium price point can reinforce the perception of value and attract a more committed audience. The data suggests the market is willing to pay for quality and exclusivity
-
-### 4. **Explore Underserved, High-Engagement Language Markets**
-
-- **The Finding**: While English dominates the market in sheer volume, languages like Hindi and Tamil show exceptionally high engagement rates per book. This points to passionate, underserved audiences.
-
-- **Recommendation**: For publishers with a strong English-language catalog, consider investing in high-quality translations and adaptations for these niche markets. The cost of entry may be lower, and the potential for capturing a highly engaged user base is significant. This represents a clear market opportunity for strategic expansion beyond the saturated English-speaking world.
 
 ---
 
